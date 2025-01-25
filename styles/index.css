@@ -63,7 +63,7 @@ main>section {
 
 .nav-item {
     list-style: none;
-    margin-right: 30px;
+    margin-right: 1.8rem;
 }
 
 .nav-link {
@@ -222,7 +222,15 @@ main>section {
     .features-container {
         flex-direction: column;
     }
-
+    .navlink
+    {
+        padding: 0;
+    }
+    .nav-item
+    {
+        margin-right: 1rem;
+        margin-left: 0.8rem;
+    }
     .features-image-container, 
     .fact-container {
         grid-template-columns: 1fr;
