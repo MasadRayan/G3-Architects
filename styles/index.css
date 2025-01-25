@@ -382,13 +382,23 @@ main>section {
     {
         line-height: normal;
     }
+    .love-img-col
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+    }
     .love-enjoy-column img
     {
-        width: 100%;
+        max-width: 450px;
+        max-height: 410px;
+        margin-bottom: 120px;
     }
     #experience-badge
     {
-        margin: 20px 100px;
+        margin-left: 20px;
         padding: 10px 20px;
         font-size: 1rem;
     }
