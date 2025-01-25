@@ -155,6 +155,75 @@ main>section {
     margin-bottom: 2rem;
 }
 
+/* love enhoy section style */
+.love-enjoy {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.love-enjoy-title {
+    max-width: 468px;
+    max-height: 106px;
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 1.3rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.love-enjoy-description {
+    margin-bottom: 1.8rem;
+    max-width: 586px;
+    max-height: 78px;
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.6rem;
+}
+
+.love-enjoy-card {
+    margin-top: 0;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    padding: 1.8rem;
+    margin-bottom: 1.25rem;
+    border-radius: 8px;
+    max-width: 586px;
+    max-height: 171px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+
+}
+
+.card-descp {
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    max-width: 514px;
+    max-height: 78px;
+    line-height: 1.6rem;
+}
+#experience-badge
+{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -92px;
+    margin-top: -123px;
+}
+#experience-year
+{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
+
 /* some fact-style */
 .some-fact-title {
     font-weight: 700;
@@ -168,14 +237,14 @@ main>section {
     max-height: 52px;
     font-weight: normal;
     font-size: 1rem;
-    margin-bottom: 6.25rem;
+    margin-bottom: 4rem;
     line-height: 1.6rem;
 }
 
 .fact-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 7.7rem;
+    gap: 7rem;
 }
 
 .fact {
@@ -197,7 +266,7 @@ main>section {
 .fact-number {
     margin-top: 0;
     font-size: 2.8rem;
-    font-weight: 600px;
+    font-weight: 600;
     margin-bottom: 5px;
 }
 
@@ -207,7 +276,41 @@ main>section {
     font-weight: 600;
     max-width: 169px;
     max-height: 23px;
+}
 
+
+
+
+/* sponsor section style */
+.sponsor-details {
+    max-width: 542px;
+    max-height: 129px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponsor-title {
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.sponsor-description {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.6rem;
+}
+
+.sponsor-companies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 9.3rem;
+}
+
+.sponsor-companies img {
+    filter: grayscale(100%);
+    max-width: 165.83px;
+    max-height: 50px;
 }
 
 
@@ -219,37 +322,127 @@ main>section {
 
     .navbar,
     .nav-link,
-    .features-container {
+    .features-container,
+    .love-enjoy {
         flex-direction: column;
     }
-    .navlink
-    {
+
+    .navlink {
         padding: 0;
     }
-    .nav-item
-    {
+
+    .nav-item {
         margin-right: 1rem;
         margin-left: 0.8rem;
     }
-    .features-image-container, 
-    .fact-container {
+
+    .features-image-container,
+    .fact-container,
+    .sponsor-companies {
         grid-template-columns: 1fr;
     }
+
+    .sponsor-companies {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sponsor-companies {
+        gap: 1rem;
+        margin-left: 3rem;
+
+    }
+
     .fact-container {
         gap: 3.5rem;
         margin-left: 3rem;
     }
-    .some-fact-description 
-    {
+
+    .some-fact-description {
         margin-bottom: 3.1rem;
+    }
+
+    .sponsor-companies img {
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+    .love-enjoy
+    {
+        gap: 3rem;
+    }
+    .love-enjoy-title
+    {
+        font-size: 1.8rem;
+    }
+    .love-enjoy-description
+    {
+        margin-bottom: 3rem;
+        line-height: normal;
+    }
+    .card-descp
+    {
+        line-height: normal;
+    }
+    .love-enjoy-column img
+    {
+        width: 100%;
+    }
+    #experience-badge
+    {
+        margin: 20px 100px;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    #experience-year
+    {
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (min-width: 577px) and (max-width: 990px) {
-    .features-container {
+    .features-container,
+    .love-enjoy {
         flex-direction: column;
     }
+
     .fact-container {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
+    .sponsor-companies {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3.5rem;
+        margin-left: 3rem;
+    }
+
+    .some-fact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .some-fact-description {
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
+    .love-enjoy
+    {
+        gap: 3rem;
+    }
+    .love-enjoy-column img
+    {
+        width: 70%;
+        margin-left: 100px;
+    }
+    #experience-badge
+    {
+        margin: 20px 100px;
+        padding: 20px 40px;
+        font-size: 1rem;
+    }
+    #experience-year
+    {
+        font-size: 1.5rem;
     }
 }
